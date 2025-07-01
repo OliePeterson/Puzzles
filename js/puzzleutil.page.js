@@ -640,7 +640,13 @@ PUZZLEUTIL.page.createPuzzleArea = (
         hideAllDialogs) => 
 {
     const hashAndSelectPuzzle = (dateString, category, dailyPlus, setNumber) => {
-        const puzzleList = puzzlesByCategory[category];
+        if (categories[selectedCategory] && categories[selectedCategory].Standard) {
+    // proceed
+} else {
+    console.warn("Puzzle category or 'Standard' variation is missing:", selectedCategory);
+    // handle fallback or display error
+}
+
         const dateString_ = dailyPlus === "Sample" ? "" : dateString;
         const s = `${dateString_} ${category} ${dailyPlus} ${setNumber}`;
         const h = cyrb53(s);
