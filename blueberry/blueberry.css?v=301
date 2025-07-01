@@ -1,0 +1,25 @@
+:root, :root.theme-light {
+    --theme-blueberry-berry: #3584e4;
+    --theme-blueberry-cherry: #f36;
+    /* --theme-blueberry-berry: #ac4;  */
+    --theme-blueberry-dot: #444;
+    --theme-blueberry-undecided: #ccc;
+    --theme-blueberry-decided: #fff;
+    --theme-blueberry-error-text: hotpink;
+    --theme-blueberry-error-cell: pink;
+    --theme-blueberry-block-outline: black;
+    --theme-blueberry-clue-text-inside-board: #000;
+    --theme-blueberry-clue-text-inside-board-opened: #000;
+    --theme-blueberry-clue-text-outside-board: #000;
+    --theme-blueberry-grid-lines-thin: #0004;
+}
+:root.theme-dark { 
+    --theme-blueberry-clue-text-outside-board: #ddd;
+}
+:root.style-B {
+    --theme-blueberry-undecided: #aaa;
+    --theme-blueberry-decided: #666;
+    --theme-blueberry-grid-lines-thin: #0004;
+    --theme-blueberry-clue-text-inside-board: #000;
+    --theme-blueberry-clue-text-inside-board-opened: #fff;
+}
